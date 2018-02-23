@@ -1,0 +1,47 @@
+﻿
+
+<div>
+    <a href="/#!/create" class="btn">create</a>
+</div>
+<div ng-controller="ListController" class="table-responsive">
+    <div ui-grid="gridOptions" ui-grid-edit="" ui-grid-pagination  ui-grid-auto-resize class="myGrid"></div>
+    <!--<table id="example" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Location</th>
+                <th>DOB</th>
+                <th>Salary</th>
+                <th>Department</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in employees">
+                <td>{{ item.ID}}</td>
+                <td>{{ item.FIRTSNAME}}</td>
+                <td>{{ item.LASTNAME}}</td>
+                <td>{{ item.LOCATION}}</td>
+                <td>{{ item.DOB |date}}</td>
+                <td>{{ item.SALARY |number:2}}</td>
+                <td>{{ item.DEPTNAME}}</td>
+                <td><a href="/#!/edit/{{item.ID}}" class="glyphicon glyphicon-edit"></a></td>
+                <td><a href="/#!/delete/{{item.ID}}" class="glyphicon glyphicon-remove"></a></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" language="javascript">
+        angular.element(document).ready(function () {
+            debugger;
+            $('#example').DataTable(
+ {
+     "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
+ }
+ );
+
+        });
+    </script>-->
+</div>
