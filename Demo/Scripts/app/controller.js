@@ -98,10 +98,12 @@ function ($scope, $http, $routeParams,$location) {
                 // success
                 alert('Data Saved Successfully');
                // $location.path('/list');
+                return 'Ok';
             },
     function (response) { // optional
         // failed
         $scope.error = 'An error occured while adding employee..!!!' + response.data;
+        return 'error';
     });
         }
         else {
@@ -134,9 +136,11 @@ function ($scope, $http, $routeParams,$location) {
             $scope.DOB = response.data[0].DOB;
             $scope.Location = response.data[0].LOCATION;
             $scope.DeptId = response.data[0].DEPT;
+            return 'Ok';
         });
     }
     else {
         $scope.title = "Create New Employee";
+        return 'error';
     }
 }]);
